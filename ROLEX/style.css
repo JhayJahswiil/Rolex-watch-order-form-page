@@ -1,0 +1,345 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(2, 2, 36, 0.808);
+    position: relative;
+    overflow-x: hidden;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section1{
+    width: 70%;
+    background: linear-gradient(#f5fdb0e3, rgba(255, 255, 255, 0.863)),
+    url(./img/Rolex-Oyster-Perpetual-Yacht-Master-42-c-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    transition: .5s ease-in-out;
+    position: relative;
+}
+
+.section1:hover{
+    margin-right: 20px;
+    transform: scale(1.1);
+}
+
+.section1--top__texts h1{
+    color: #a58d05e5;
+    text-align: center;
+    margin-top: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.section1--top__texts p{
+    text-align: center;
+    font-size: 27px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.section1--image{
+    text-align: center;
+}
+
+.section1--image .img-1{
+    width: 300px;
+    margin-top: 15px;
+}
+
+.section1--image .img-2{
+    margin-top: 40px;
+    width: 300px;
+    display: none;
+}
+
+.section1--image .img-3{
+    margin-top: 30px;
+    width: 300px;
+    display: none;
+}
+
+.section1--image__carousel{
+    position: absolute;
+    bottom: 3%;
+    right: 0;
+    left: 0;
+    text-align: center;
+}
+
+.section1--image__carousel input[type=radio]{
+    width: 5%;
+    height: 1.5em;
+    accent-color: #a58d05e5;
+}
+
+
+
+/* SECTION2 */
+.section2{
+    margin-left: 10px;
+    width: 40vw;
+    min-height: 80vh;
+    background: #cfb315bd;
+    transition: .5s ease-in-out;
+}
+
+.section2:hover{
+    margin-left: 25px;
+    transform: scale(1.1);
+}
+
+form{
+    text-align: center;
+}
+
+form .form--text{
+    margin-top: 30px;
+}
+
+form .form--text h2{
+    color: white;
+    font-size: 25px;
+}
+
+form .form-inputs{
+    margin-top: 40px;
+}
+
+form .form--input{
+    margin: 10px;
+}
+
+form input{
+    padding: 15px;
+    width: 70%;
+    background: transparent;
+    border: 1px solid rgba(197, 197, 45, 0.452);
+    outline: 1px solid rgba(255, 255, 255, 0.384);
+    color: white;
+    font-size: 18px;
+}
+
+form ::placeholder{
+    color: rgba(255, 255, 255, 0.767);
+    font-size: 18px;
+}
+
+form button{
+    margin-top: 10px;
+    font-size: 15px;
+    padding: 10px 15px;
+    font-weight: 600;
+}
+
+form button:hover{
+    background-color: rgba(255, 255, 255, 0.829);
+    border: 2px solid #c5c52d73;
+}
+
+/* FOOTER */
+footer{
+    position: absolute;
+    bottom: 1%;
+}
+
+footer p{
+    text-align: center;
+    color: wheat;
+    font-size: 14px;
+}
+
+
+
+/* RESPONSIVENESS */
+
+@media screen and (max-width:725px) {
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: none;
+    background-color: rgba(2, 2, 36, 0.808);
+    position: relative;
+    overflow-x: hidden;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section1{
+    width: 100vw;
+    min-height: 60vh;
+    background: linear-gradient(#f5fdb0e3, rgba(255, 255, 255, 0.863)),
+    url(./img/Rolex-Oyster-Perpetual-Yacht-Master-42-c-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    transition: .5s ease-in-out;
+    position: relative;
+}
+
+.section1:hover{
+    margin-right: 0;
+    transform: none;
+}
+
+.section1--image .img-1{
+    width: 300px;
+    margin-top: 15px;
+}
+
+.section1--image .img-2{
+    margin-top: 40px;
+    width: 300px;
+    display: none;
+}
+
+.section1--image .img-3{
+    margin-top: 30px;
+    width: 300px;
+    display: none;
+}
+
+
+/* SECTION2 */
+.section2{
+    margin-left: 0;
+    width: 100vw;
+    min-height: 80vh;
+    background: #cfb315bd;
+    transition: .5s ease-in-out;
+}
+
+.section2:hover{
+    margin-left: 0;
+    transform: none;
+}
+
+
+form button{
+    margin-top: 15px;
+    font-size: 15px;
+    padding: 17px 40px;
+    font-weight: 600;
+}
+
+}
+
+
+@media screen and (max-width:330px) {
+.section1:hover{
+    margin-right: 0;
+    transform: none;
+}
+
+.section1--image{
+    text-align: center;
+}
+
+.section1--image .img-1{
+    width: 250px;
+    margin-top: 30px;
+}
+
+.section1--image .img-2{
+    margin-top: 45px;
+    width: 250px;
+    display: none;
+}
+
+.section1--image .img-3{
+    margin-top: 45px;
+    width: 240px;
+    display: none;
+}
+
+
+/* SECTION2 */
+.section2{
+    margin-left: 0;
+    width: 100vw;
+    min-height: 80vh;
+    background: #cfb315bd;
+    transition: .5s ease-in-out;
+}
+
+.section2:hover{
+    margin-left: 0;
+    transform: none;
+}
+
+form button{
+    margin-top: 15px;
+    font-size: 15px;
+    padding: 17px 40px;
+    font-weight: 600;
+}
+}
+
+
+@media screen and (max-width:280px) {
+.section1:hover{
+    margin-right: 0;
+    transform: none;
+}
+
+.section1--image .img-1{
+    width: 80%;
+    margin-top: 30px;
+}
+
+.section1--image .img-2{
+    margin-top: 45px;
+    width: 80%;
+    display: none;
+}
+
+.section1--image .img-3{
+    margin-top: 50px;
+    width: 80%;
+    display: none;
+}
+
+
+/* SECTION2 */
+.section2:hover{
+    margin-left: 0;
+    transform: none;
+}
+
+form input{
+    padding: 15px;
+    width: 85%;
+    background: transparent;
+    border: 1px solid rgba(197, 197, 45, 0.452);
+    outline: 1px solid rgba(255, 255, 255, 0.384);
+    color: white;
+    font-size: 18px;
+}
+
+form button{
+    margin-top: 15px;
+    font-size: 15px;
+    padding: 10px 15px;
+    font-weight: 600;
+}
+}
